@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+<style>
+    body{
+      background-color: #ADD8E6;
+    }
+
+
+    #mainsquare{
+      
+        width:96%; height:400px;  border:1px solid black; float: left;
+    }
+
+    #divsquare1{
+        width:50%; height:199px;  border:1px solid black; float: left;
+        background-image: url("do.png");
+        background-size: 40px;
+        background-repeat:no-repeat;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: justify;
+    }
+    #divsquare2{
+        width:50%; height:199px;  border:1px solid black; float: left;
+        background-image: url("decide.png");
+        background-size: 40px;
+        background-repeat:no-repeat;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: justify;
+
+    }
+    #divsquare3{
+        width:50%; height:199px; border:1px solid black; float: left;
+        background-image: url("delegate.png");
+        background-size: 40px;
+        background-repeat:no-repeat;
+        overflow-x: hidden;
+        overflow-y: auto;
+              text-align: justify;
+  
+    }
+    #divsquare4{
+        width:50%; height:199px;  border:1px solid black; float: left;
+        background-image: url("delete.png");
+        background-size: 40px;
+        background-repeat:no-repeat;
+        overflow-x: hidden;
+        overflow-y: auto;
+                text-align: justify;
+
+    }
+    #div1{
+      display: flex;
+    }
+    #div2{
+      display: flex;
+    }
+    #header{
+      font-weight: bold;
+    }
+    
+    .para{
+      font-weight: bold;
+      padding-left: 40px;
+      text-decoration: underline;
+    }
+
+
+</style>    
+</head>
+
+<body>
+  <header id="header">
+    <center><h3>Your Matrix Result</h3></center>
+  </header>
+  <div id="mainsquare">
+  <div id="div1">
+    
+<div id="divsquare1"><p class="para">do this tasks now</p><hr color="black">
+<ul id="dotasks">
+  
+</ul>
+</div>
+<div id="divsquare2"><p class="para">decide this task</p><hr color="black">
+<ul id="decidetasks">
+  
+</ul>
+</div>
+  </div>
+  <div id="div2">
+  <div id="divsquare3"><p class="para">delegate this task</p><hr color="black">
+  <ul id="delegatetasks">
+    
+  </ul>
+  </div>
+  <div id="divsquare4"><p class="para">delete this task</p><hr color="black">
+  <ul id="deletetasks">
+    
+  </ul>
+  </div>
+  </div>
+  </div>
+  <script src="matrixget.js"></script>
+</body>
+
+</html>
+
+

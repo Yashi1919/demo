@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>matrix</title>
+  <style>
+    body{
+      background-color: #90EE90;
+      margin: 0px
+    }
+    #header{
+      display: flex;
+      background-color: orange;
+      width: 100;%;
+      justify-content:center;
+      padding:5px;
+      border:1px solid orange;
+      border-end-end-radius:10px;
+      border-end-start-radius:10px;
+
+    }
+    #startbtn{
+      margin: 2px;
+      width: 355px;
+      padding: 7px;
+      border: 1px solid #426A8C;
+      background-color: #426A8C;
+      border-radius: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #90EE90;
+      font-style: italic;
+            box-shadow: 5px 5px black;
+
+    }
+    #start{
+            margin: 2px;
+
+      display: flex;
+    }
+    
+    #heading{
+      font-weight: bold;
+      
+    }
+    #add {
+      margin: 2px;
+      width: 55px;
+      padding: 7px;
+      border: 1px solid #426A8C;
+      background-color: #426A8C;
+      border-radius: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #90EE90;
+      font-style: italic;
+      box-shadow: 5px 5px black;
+    }
+    
+    #tasksection{
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      height: 1000px;
+      background-color: #FFA500;
+      border: 2px solid orange;
+      border-radius: 15px;
+      
+    }
+   label{
+     font-weight: bold;
+     font-size: 15px;
+     padding-left: 2px;
+     color: orange;
+   }
+   .taskinput{
+     width: 340px;
+     padding: 7px;
+     background-color: #FFA500;
+           border-radius: 15px;
+           color:#426A8C;
+           font-weight: bold;
+           font-size: 16px;
+
+   }
+   .taskinput::placeholder{
+     font-weight: bold;
+     
+   }
+   .taskdiv{
+     
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }
+   
+   .taskdiv2{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv2{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv3 {
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv4 {
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv5{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv6{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv7{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv8{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv9{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv10{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv11{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv12{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv13{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv14{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv15{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv16{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv17{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv18{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv19{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }.taskdiv20{
+   
+     background-color: #426A8C;
+     border: 1px solid orange;
+     border-radius: 10px;
+   }
+   
+   .checkboxdiv{
+     display: flex;
+     justify-content: space-between;
+   }
+   #inputtaskss{
+     display: flex;
+   }
+   #tasksofyou{
+     width: 300px;
+     padding-left: 2px;
+     border:2px solid #4268AC;
+     border-radius: 15px;
+     background-color: #FFA500;
+     font-size: 28px;
+     font-weight: bold;
+     color: #4268AC;
+     font-style: italic;
+   }
+   .dotask{
+     background-color: red;
+     font-weight: bold;
+     font-style: italic;
+     color: #426A8C;
+     padding: 5px;
+   }
+   .delegatetask{
+     background-color: yellow;
+     font-weight: bold;
+     font-style: italic;
+     color: #000080;
+     padding: 5px;
+   }
+   .decidetask{
+     background-color: gray;
+     font-weight: bold;
+     font-style: italic;
+     color: #426A8C;
+     padding: 5px;
+   }
+   
+   .deletetask {
+     background-color: white;
+     font-weight: bold;
+     font-style: italic;
+     color: #FFA500;
+     padding: 5px;
+   }
+   
+   .icons{
+     height: 40px;
+     width: 40px;
+     padding-top: 10px;
+     padding-left: 10px;
+     background-color: white;
+     border-radius: 5px;
+   }
+  .dodiv{
+    background-color: red;
+    display: flex;
+    flex-flow: row;
+   border-radius: 15px;
+  }
+   .delegatediv {
+     display: flex;
+     flex-flow: row;
+          background-color: yellow;
+   border-radius: 15px;
+
+   }
+   .decidediv {
+     display: flex;
+          flex-flow: row;
+     background-color: gray;
+   border-radius: 15px;
+
+   }
+   .deletediv {
+     display: flex;
+          flex-flow: row;
+     background-color: white;
+   border-radius: 15px;
+
+   }
+   
+   .strtbutton{
+     margin-left: 40px;
+     height: 50px;
+     background-color: #426A8C;
+     color: yellow;
+   }
+  </style>
+  
+</head>
+
+<body>
+  <header id="header">
+    <h3 id="heading">Eiser Hower Matrix</h3>
+  </header>
+  <div id="start">
+    <button id="startbtn">start working</button>
+  </div>
+  <hr>
+  <hr>
+<div id="inputtaskss">
+  <input type="text" id="tasksofyou">
+  <button id="add">
+    Add Tasks
+  </button>
+  </div>
+  <hr>
+  <section id="tasksection">
+    
+  </section>
+  <script src="matrix.js"></script>
+</body>
+</html>

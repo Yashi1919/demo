@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Todo List</title>
+  
+  <style>
+  
+  body{
+   background-color: #90EE90;
+  }
+    header{
+   background-color: #FFA500;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-top: 0px;
+   border-radius: 15px;
+    }
+    header h2{
+      color: #4268AC;
+    }
+    .todo-input{
+   margin-top: 10px;
+   padding: 5px;
+   background-color: #90EE90;
+   font-size: 20px;
+   font-weight: bold;
+   color: red;
+   box-shadow: 4px black;
+   font-style: italic;
+   border-radius: 15px;
+      margin-left: 10px;
+
+    }
+    
+      .add-button{
+        margin-top: 0px;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: #FFA500;
+   padding: 7px;
+   border: 2px deeppink;
+   border-radius: 15px;
+   padding-right: 15px;
+   text-align: center;
+   color: #4268AC;
+   font-style: italic;
+   margin-left: 7px;
+   margin-bottom: 10px;
+      }
+  
+  .todo-items {
+    min-width: 350px;
+    list-style-type: none;
+  }
+  
+  /* each li with class="item" */
+  .item {
+    margin-top: 5px;
+    background-color: #4268AC;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-right: 100px;
+    font-weight: bold;
+    color: #FFA500;
+  }
+  
+  .item:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  
+  .item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .checkbox {
+  margin-right: 10px;
+}
+
+.delete-button {
+  float: right;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+/* applied when the todo item is checked */
+.checked { 
+  text-decoration: line-through;
+}
+#container{
+  height: 10000px;
+  background-color: #FFA500;
+  margin-bottom: 10px;
+  margin-top:0px;
+    margin-left:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+  border: 2px solid #4268AC;
+border-radius: 17px;
+}
+.todo-form{
+  background-color: #4268AC;
+  border: 2px solid #FFA500;
+   border-radius: 20px;
+  }
+
+#todos{
+  background-color: 
+}
+#strtbtn{
+  width: 100%;
+  background-color: #FFA500;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4268AC;
+  border-radius: 10px;
+}
+
+  </style>
+  
+  
+</head>
+<body>
+
+  <div class="container">
+    <center><header><h2>to-do list</h2></header></center>
+    
+<hr>
+    <form class="todo-form">
+      <input type="text" class="todo-input" placeholder="Add a Todo...">
+      <button type="submit" class="add-button">Add</button>
+    </form>
+    
+    <hr>
+    <div>
+      <center><button id="strtbtn">start</button></center>
+    </div>
+    <hr>
+<div id="container">
+  <div id=todos>
+    <ul class="todo-items">
+      <!-- dummy item -->
+      <!-- <li class="item" data-key="1594003133171">
+        <input class="checkbox" type="checkbox">
+        Go to Gym
+        <button class="delete-button">X</button>
+      </li> -->
+    </ul>
+    </div>
+    </div>
+  </div>
+  
+  
+  <script type="text/javascript" src="newtodolist.js"></script>
+</body>
+</html>

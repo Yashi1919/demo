@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  header{
+    margin-top: 0px;
+    background-color: ;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
+  body{
+    margin-top: 0px;
+    background-color:#CBC3E3;
+  }
+    nav{
+      display: flex;
+      justify-content: space-between;
+           margin-top: 0px;
+
+    }
+    .nav{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-bottom:5px;
+      background-color: #FFA500;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #426A8C;
+      font-weight: bold;
+    }
+    
+.nav1{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-bottom:5px;
+      background-color: hotpink;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #426A8C;
+      font-weight: bold;
+    }
+
+
+
+
+    #headerpara{
+      background-color: ;
+      margin-top: 0px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      font-style: italic;
+      font-weight: bold;
+      color: red;
+      font-size: 18px;
+
+    }
+    #headerdiv{
+      margin: 0px;
+      background-color:#90EE90;
+      border-end-start-radius:10px;
+      border-end-end-radius: 10px;
+    }
+    
+    
+#mainsection{
+  margin-top: 10px;
+  width: 100%;
+  height: 100000px;
+  background-color: #90EE90;
+  border-radius: 25px;
+}    
+#addgoals{
+display: flex;
+padding: 10px:
+}
+#goal{
+  width: 270px;
+    border:2px solid #90EE90;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #4268AC;
+    color: #90EE90;
+}
+#addgoal{
+  margin-left: 10px;
+  width: 75px;
+  border:2px solid #90EE90;
+  height: 45px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: orange;
+  color: #426A8C;
+  font-size: 25px;
+  font-style: italic;
+  box-shadow: 10px 10px 8px #888888;
+}
+    
+    #ta{
+      margin-left: 3px;
+      margin-top: 3px;
+    }
+    
+    #goal::placeholder {
+      color: #FFA500;
+      font-weight: bold;
+    }
+    
+    .li{
+      color: black;
+font-weight: bold;
+    }
+  </style>
+</head>
+
+<body id="yearly">
+  <div id="headerdiv">
+<header>
+ <center><p id="headerpara">select your goal type</p></center>
+  <nav id="goalselector">
+<button class="nav1" id="yearly">yearly</button>
+<button class="nav" id="monthly">monthly</button>
+<button class="nav" id="weekly">weekly</button>
+<button class="nav" id="daily">daily</button>
+
+  </nav>
+</header>
+</div>
+<hr>
+
+<div id="addgoals">
+  <input type="text" id="goal" placeholder="Enter Your Yearly Goal"><button id="addgoal">add</button>
+  
+</div>
+<hr>
+<section id="mainsection">
+  <div id="maindiv">
+    
+  </div>
+</section>
+
+    <script>
+      
+ 
+let maindiv=document.getElementById("maindiv"); 
+let addbtn=document.getElementById("addgoal")
+;
+
+let task=document.getElementById("goal");
+
+function Mytask(task){
+  this.task=task;
+}
+
+addbtn.addEventListener('click',() =>{
+  if(localStorage.getItem("rpmyearlytasks")==null){
+    localStorage.setItem("rpmyearlytasks","[]")
+  }
+  
+let ta=JSON.parse(localStorage.getItem("rpmyearlytasks"));
+let nt=new Mytask(task.value);
+ ta.push(nt);
+ 
+ localStorage.setItem("rpmyearlytasks",JSON.stringify(ta));
+ representondiv();
+})
+let i=0;
+function representondiv(){
+  let ta=JSON.parse(localStorage.getItem("rpmyearlytasks"));
+  
+  for(i=i; i<ta.length; i++){
+ let taskdiv=document.createElement("div");
+ 
+ taskdiv.innetHTML=ta[i].task;
+ 
+ console.log(ta[i].task);
+ maindiv.appendChild(taskdiv);
+ 
+  }
+  
+}
+      
+    </script>
+
+
+
+</body>
+
+</html>
+

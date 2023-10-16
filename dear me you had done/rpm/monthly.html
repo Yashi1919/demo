@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  header{
+    margin-top: 0px;
+    background-color: ;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
+  body{
+    margin-top: 0px;
+    background-color:#CBC3E3;
+  }
+    nav{
+      display: flex;
+      justify-content: space-between;
+           margin-top: 0px;
+
+    }
+    .nav{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-bottom:5px;
+      background-color: #FFA500;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #426A8C;
+      font-weight: bold;
+    }
+    #headerpara{
+      background-color: ;
+      margin-top: 0px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      font-style: italic;
+      font-weight: bold;
+      color: red;
+      font-size: 18px;
+
+    }
+    #headerdiv{
+      margin: 0px;
+      background-color:#90EE90;
+      border-end-start-radius:10px;
+      border-end-end-radius: 10px;
+    }
+    
+    
+#mainsection{
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #90EE90;
+  border-radius: 25px;
+}    
+    #addgoals{
+display: flex;
+padding: 10px:
+}
+#goal{
+  width: 270px;
+    border:2px solid #90EE90;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #4268AC;
+    color: #90EE90;
+}
+#addgoal{
+  margin-left: 10px;
+  width: 75px;
+  border:2px solid #90EE90;
+  height: 45px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: orange;
+  color: #426A8C;
+  font-size: 25px;
+  font-style: italic;
+  box-shadow: 10px 10px 8px #888888;
+}
+    
+    .nav1{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-bottom:5px;
+      background-color: hotpink;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #426A8C;
+      font-weight: bold;
+    }
+    
+    
+.months{
+  width: 335px;
+  height: 150px;
+  border: 2px solid #426A8C;
+  margin-top: 10px;
+  border-radius: 15px;
+  overflow-y: auto;
+  overflow-x: auto;
+}    
+ 
+ .ti{
+   background-color: #426A8C;
+   margin-top: 3px;
+   padding: 5px;
+   width: 265px;
+   border: 1px solid #FFA500;
+   border-radius: 15px;
+   font-weight: bold;
+   color: #90EE90;
+ }
+ .tb{
+   width: 50px;
+   padding: 5px;
+   background-color: #426A8C;
+   font-weight: bold;
+   color: #90EE90;
+   border: 1px solid #FFA500;
+      border-radius: 15px;
+   font-size: 15px;
+ }
+ .ti:: placeholder {
+   color: #90EE90;
+ }
+
+
+  </style>
+</head>
+
+<body id="monthly">
+  <div id="headerdiv">
+<header>
+ <center><p id="headerpara">select your goal type</p></center>
+  <nav id="goalselector">
+<button class="nav" id="yearly">yearly</button>
+<button class="nav1" id="monthly">monthly</button>
+<button class="nav" id="weekly">weekly</button>
+<button class="nav" id="daily">daily</button>
+
+  </nav>
+</header>
+
+</div>
+<hr>
+<div id="addgoals">
+<input type="text" id="goal"><button id="addgoal">add</button>
+</div>
+<hr>
+<div id="mainsection">
+
+<div id="January" class="months">
+ <input type="text" id="janinput" class="ti" placeholder="January goals">
+ <button class="tb" id="janbtn">set</button>
+ <ul id="jantasks">
+   
+ </ul>
+  </div>
+
+
+<div id="february" class="months">
+  <input type="text" id="febinput" class="ti" placeholder="February goals">
+ <button class="tb" id="febbtn">set</button>
+ <ul id="febtasks">
+   
+ </ul>
+</div>
+
+<div id="march" class="months">
+  <input type="text" id="marinput" class="ti" placeholder="March goals">
+ <button class="tb" id="marbtn">set</button>
+ <ul id="martasks">
+
+ </ul>
+</div>
+<div id="april" class="months">
+  <input type="text" id="aprinput" class="ti" placeholder="April goals">
+ <button class="tb" id="aprbtn">set</button>
+ <ul id="aprtasks">
+
+ </ul>
+</div>
+<div id="may" class="months">
+  <input type="text" id="mayinput" class="ti" placeholder="May goals">
+ <button class="tb" id="maybtn">set</button>
+ <ul id="maytasks">
+
+ </ul>
+</div>
+
+
+
+<div id="June"class="months">
+  <input type="text" id="juninput" class="ti" placeholder=" June goals">
+ <button class="tb" id="junbtn">set</button>
+ <ul id="juntasks">
+
+ </ul>
+</div>
+<div id="July" class="months">
+  <input type="text" id="julinput" class="ti" placeholder="July goals">
+ <button class="tb" id="julbtn">set</button>
+ <ul id="jultasks">
+
+ </ul>
+</div>
+<div id="august" class="months">
+  <input type="text" id="auginput" class="ti" placeholder="August goals">
+ <button class="tb" id="augbtn">set</button>
+ <ul id="augtasks">
+
+ </ul>
+</div>
+<div id="september"class="months">
+  <input type="text" id="septinput" class="ti" placeholder="September goals">
+ <button class="tb" id="septbtn">set</button>
+ <ul id="septtasks">
+
+ </ul>
+</div>
+<div id="october" class="months">
+  <input type="text" id="octinput" class="ti" placeholder="October goals">
+ <button class="tb" id="octbtn">set</button>
+ <ul id="octtasks">
+
+ </ul>
+</div>
+<div id="november" class="months">
+  <input type="text" id="novinput" class="ti" placeholder=" November goals">
+ <button class="tb" id="novbtn">set</button>
+ <ul id="novtasks">
+
+ </ul>
+</div>
+
+
+<div id="december" class="months">
+  <input type="text" id="decinput" class="ti" placeholder=" December goals">
+ <button class="tb" id="decbtn">set</button>
+ <ul id="dectasks">
+
+ </ul>
+</div>
+
+
+
+
+</div>
+
+
+<script>
+let janinput=document.getElementById('janinput');
+
+let febinput=document.getElementById('febinput');
+let marinput=document.getElementById('marinput');
+let aprinput=document.getElementById('aprinput');
+let mayinput=document.getElementById('mayinput');
+let juninput=document.getElementById('juninput');
+let julinput=document.getElementById('julinput');
+let auginput=document.getElementById('auginput');
+let septinput=document.getElementById('septinput');
+let octinput=document.getElementById('octinput');
+let novinput=document.getElementById('novinput');
+let decinput=document.getElementById('decinput');
+
+
+console.log(decinput);
+
+ let janbtn=document.getElementById('janbtn');
+ let febbtn=document.getElementById('febbtn');
+ let marbtn=document.getElementById('marbtn');
+ let aprbtn=document.getElementById('aprbtn');
+ let maybtn=document.getElementById('maybtn');
+ let junbtn=document.getElementById('junbtn');
+ let julbtn=document.getElementById('julbtn');
+ let augbtn=document.getElementById('augbtn');
+ let septbtn=document.getElementById('septbtn');
+ let octbtn=document.getElementById('octbtn');
+ let novbtn=document.getElementById('novbtn');
+ let decbtn=document.getElementById('decbtn');
+ 
+ 
+ janbtn.addEventListener('click',jan);
+  febbtn.addEventListener('click',feb);
+ marbtn.addEventListener('click',mar);
+ aprbtn.addEventListener('click',apr);
+ maybtn.addEventListener('click',may);
+ junbtn.addEventListener('click',jun);
+ julbtn.addEventListener('click',jul);
+ augbtn.addEventListener('click',aug);
+ septbtn.addEventListener('click',sept);
+ octbtn.addEventListener('click',oct);
+ novbtn.addEventListener('click',nov);
+ decbtn.addEventListener('click',dec);
+
+
+
+let a=1;
+function jan(){
+  if(janinput.value!==""){
+
+  if(JSON.parse(localStorage.getItem("jantasks")==null)){
+    localStorage.setItem("jantasks","[]")
+  }
+let jan=JSON.parse(localStorage.getItem("jantasks"));
+let at=new Mytask(janinput.value);
+jan.push(at);
+
+localStorage.setItem("jantasks",JSON.stringify(jan));
+
+let jant=JSON.parse(localStorage.getItem("jantasks"));
+
+    for(a=a; a<jant.length; a++){
+        let li=document.createElement('li');
+        console.log(jant[a].task);
+li.innerHTML=jant[a].task;
+jantasks.appendChild(li);
+    janinput.value="";
+
+    }
+
+}  
+  
+}
+
+let b=1;
+function feb(){
+    if(febinput.value!==""){
+
+  if(JSON.parse(localStorage.getItem("febtasks")==null)){
+    localStorage.setItem("febtasks","[]")
+  }
+let feb=JSON.parse(localStorage.getItem("febtasks"));
+console.log(feb);
+
+let bt=new Mytask(febinput.value);
+feb.push(bt);
+localStorage.setItem("febtasks",JSON.stringify(feb));
+
+let febt=JSON.parse(localStorage.getItem("febtasks"));
+
+    for(b=b; b<febt.length; b++){
+        let li=document.createElement('li');
+li.innerHTML=febt[b].task;
+febtasks.appendChild(li);
+    febinput.value="";
+
+    }
+}
+}
+
+c=1;
+function mar(){
+    if(marinput.value!==""){
+
+    if(JSON.parse(localStorage.getItem("martasks")==null)){
+    localStorage.setItem("martasks","[]")
+  }
+let mar=JSON.parse(localStorage.getItem("martasks"));
+let ct=new Mytask(marinput.value);
+mar.push(ct);
+
+localStorage.setItem("martasks",JSON.stringify(mar));
+
+let mart=JSON.parse(localStorage.getItem("martasks"));
+
+    for(c=c; c<mart.length; c++){
+        let li=document.createElement('li');
+li.innerHTML=mart[c].task;
+martasks.appendChild(li);
+    marinput.value="";
+
+    }
+}
+}
+
+
+d=1;
+function apr(){
+    if(aprinput.value!==""){
+
+  if(JSON.parse(localStorage.getItem("aprtasks")==null)){
+    localStorage.setItem("aprtasks","[]")
+  }
+let apr=JSON.parse(localStorage.getItem("aprtasks"));
+let dt=new Mytask(aprinput.value);
+apr.push(dt);
+
+localStorage.setItem("aprtasks",JSON.stringify(apr));
+
+let aprt=JSON.parse(localStorage.getItem("aprtasks"));
+
+    for(d=d; d<aprt.length; d++){
+        let li=document.createElement('li');
+li.innerHTML=aprt[d].task;
+aprtasks.appendChild(li);
+    aprinput.value="";
+
+    }
+}
+}
+
+e=1;
+function may(){
+    if(mayinput.value!==""){
+
+  if(JSON.parse(localStorage.getItem("maytasks")==null)){
+    localStorage.setItem("maytasks","[]")
+  }
+let may=JSON.parse(localStorage.getItem("maytasks"));
+let et=new Mytask(mayinput.value);
+console.log(mayinput.value);
+may.push(et);
+
+localStorage.setItem("maytasks",JSON.stringify(may));
+
+let mayt=JSON.parse(localStorage.getItem("maytasks"));
+
+    for(e=e; e<mayt.length; e++){
+        let li=document.createElement('li');
+li.innerHTML=mayt[e].task;
+maytasks.appendChild(li);
+    mayinput.value="";
+
+    }
+}
+
+}
+
+
+f=1;
+function jun(){
+    if(juninput.value!==""){
+
+  if (JSON.parse(localStorage.getItem("juntasks") == null)) {
+    localStorage.setItem("juntasks", "[]")
+  }
+  let jun= JSON.parse(localStorage.getItem("juntasks"));
+  let ft = new Mytask(juninput.value);
+  jun.push(ft);
+  
+  localStorage.setItem("juntasks", JSON.stringify(jun));
+  
+  let junt = JSON.parse(localStorage.getItem("juntasks"));
+  
+  for (f = f; f< junt.length; f++) {
+    let li = document.createElement('li');
+    li.innerHTML = junt[f].task;
+    juntasks.appendChild(li);
+     juninput.value="";
+   
+  }
+}
+}
+
+
+g=1
+function jul(){
+    if(julinput.value!==""){
+
+  if (JSON.parse(localStorage.getItem("jultasks") == null)) {
+    localStorage.setItem("jultasks", "[]")
+  }
+    let jul= JSON.parse(localStorage.getItem("jultasks"));
+
+  let gt = new Mytask(julinput.value);
+  jul.push(gt);
+  
+  localStorage.setItem("jultasks", JSON.stringify(jul));
+  
+  let jult = JSON.parse(localStorage.getItem("jultasks"));
+  
+  for (g = g; g < jult.length; g++) {
+    let li = document.createElement('li');
+    li.innerHTML = jult[g].task;
+    jultasks.appendChild(li);
+     julinput.value="";
+
+  }
+}
+}
+
+h=1;
+function aug(){
+    if(auginput.value!==""){
+
+  if (JSON.parse(localStorage.getItem("augtasks") == null)) {
+    localStorage.setItem("augtasks", "[]")
+  }
+  let aug = JSON.parse(localStorage.getItem("augtasks"));
+  let ht = new Mytask(auginput.value);
+  aug.push(ht);
+  
+  localStorage.setItem("augtasks", JSON.stringify(aug));
+  
+  let augt = JSON.parse(localStorage.getItem("augtasks"));
+  
+  for (h = h; h< augt.length; h++) {
+    let li = document.createElement('li');
+    li.innerHTML = augt[h].task;
+    augtasks.appendChild(li);
+     auginput.value="";
+
+  }
+}
+}
+
+
+i=1;
+function sept(){
+    if(septinput.value!==""){
+
+  if (JSON.parse(localStorage.getItem("septtasks") == null)) {
+    localStorage.setItem("septtasks", "[]")
+  }
+  let sep = JSON.parse(localStorage.getItem("septtasks"));
+  let it = new Mytask(septinput.value);
+  sep.push(it);
+  
+  localStorage.setItem("septtasks", JSON.stringify(sep));
+  
+  let septt = JSON.parse(localStorage.getItem("septtasks"));
+  
+  for (i = i; i < septt.length; i++) {
+    let li = document.createElement('li');
+    li.innerHTML = septt[i].task;
+    septtasks.appendChild(li);
+        septinput.value="";
+
+  }
+}
+}
+
+j=1
+function oct(){
+    if(octinput.value!==""){
+
+  if (JSON.parse(localStorage.getItem("octtasks") == null)) {
+    localStorage.setItem("octtasks", "[]")
+  }
+    
+  let oct= JSON.parse(localStorage.getItem("octtasks"));
+  let jt = new Mytask(octinput.value);
+  oct.push(jt);
+  
+  localStorage.setItem("octtasks", JSON.stringify(oct));
+  
+  let octt = JSON.parse(localStorage.getItem("octtasks"));
+  
+  for (j = j; j < octt.length; j++) {
+    let li = document.createElement('li');
+    li.innerHTML = octt[j].task;
+    if(octinput.value!==null){
+    octtasks.appendChild(li);
+    }
+        octinput.value="";
+
+  }
+}
+}
+
+
+
+k=1;
+function nov(){
+    if(novinput.value!==""){
+
+  if (JSON.parse(localStorage.getItem("novtasks") == null)) {
+    localStorage.setItem("novtasks", "[]")
+  }
+  let nov = JSON.parse(localStorage.getItem("novtasks"));
+  let kt = new Mytask(novinput.value);
+  nov.push(kt);
+  
+  localStorage.setItem("novtasks", JSON.stringify(nov));
+  
+  let novt = JSON.parse(localStorage.getItem("novtasks"));
+  
+  for (k= k; k< novt.length; k++) {
+    let li = document.createElement('li');
+    li.innerHTML = novt[k].task;
+    novtasks.appendChild(li);
+        novinput.value="";
+
+  }
+}
+
+}
+
+
+
+
+l=1;
+function dec(){
+      if(decinput.value!==""){
+
+  console.log(decinput.value);
+  if (JSON.parse(localStorage.getItem("dectasks") == null)) {
+    localStorage.setItem("dectasks", "[]")
+  }
+  let dec = JSON.parse(localStorage.getItem("dectasks"));
+  
+
+   let lt = new Mytask(decinput.value);
+      
+  dec.push(lt);
+  
+  localStorage.setItem("dectasks", JSON.stringify(dec));
+  
+  let dect = JSON.parse(localStorage.getItem("dectasks"));
+  
+  for (l = l; l < dect.length; l++) {
+    let li = document.createElement('li');
+    li.innerHTML = dect[l].task;
+    dectasks.appendChild(li);
+    decinput.value="";
+  }
+}
+}
+
+function Mytask(task){
+  this.task=task;
+}
+
+window.onload=function(){
+ 
+  jan();
+ 
+  feb();
+  mar();
+  apr();
+  may();
+  jun();
+  jul();
+  aug();
+  sept();
+  oct();
+  nov();
+  dec();
+}
+
+</script>
+
+
+</body>
+
+</html>
