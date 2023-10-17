@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+ <style>
+  body{
+   background-color: #90EE90;
+  }
+  #timeleft{
+    display: flex;
+    width: auto;
+    margin:auto;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #90EE90;
+   
+  }
+  #spheader{
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    background-color: #FFA500;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  #ut{
+    width: 100%;
+    padding: 2px;
+    background-color: red;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: greenyellow;
+    padding: 5px;
+    border 2px solid #FFA500;
+    border-radius:10px;
+    box-shadow: 5px black;
+  }
+  #reqpom{
+    display: flex;
+  }
+  #snop{
+    width: 240px;
+    border:2px solid #90EE90;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #4268AC;
+    color: #90EE90;
+  }
+  #snopset{
+    width: 100px;
+    border:2px solid #90EE90;
+    height: 46px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: orange;
+        color: #426A8C;
+        font-size: 25px;
+        font-style: italic;
+
+  }
+  ::placeholder{
+    color: #90EE90;
+    font-weight: bold;
+  }
+  
+  .divisions1{
+    border-radius: 3px;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    width: 50px;
+    }
+    
+  .divisions0{
+        border-radius: 7px;
+border: 2px solid orangered;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    width: 50px;
+    }
+  .divisions1{
+        border-radius: 7px;
+border: 2px solid red;
+
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    width: 50px;
+    }
+  .divisions2{
+        border-radius: 7px;
+border: 2px solid red;
+
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    width: 50px;
+    }
+  .divisions3{
+        border-radius: 7px;
+border: 2px solid red;
+
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    width: 50px;
+    }
+    .divisions4 {
+          border-radius: 7px;
+border: 2px solid red;
+
+      display: flex;
+      flex-flow: row;
+      height: 50px;
+      width: 50px;
+    }
+    
+  #timers{
+    display: flex;
+        justify-content: space-between;
+
+  }
+  #counter{
+    font-weight: bold;
+    font-style: italic;
+    
+  }
+  #fbtimers{
+    width: 340px;
+    height: 340px;
+    background-color: orange;
+    border-radius: 20px;
+    
+  }
+  #focustimer{
+         display: flex;
+    font-size: 80px;
+    color: #FFA500;
+    margin-top: 10px;
+    height: 100px;
+    width: 340px;
+    background-color: #426A8C;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  .timersp{
+    font-weight: bold;
+    text-decoration: underline;
+    
+  }
+   #breaktimer {
+     display: flex;
+     font-size: 80px;
+   color: #FFA500;
+     margin-top: 10px;
+     height: 100px;
+     width: 340px;
+     background-color: #426A8C;
+     justify-content: center;
+     border-radius: 20px;
+   }
+   
+ </style>
+</head>
+
+<body>
+<div id="spheader">
+   <center> <h3>Time Left For You Today</h3></center>
+
+ 
+ <div id="timeleft">
+
+  <script type="text/javascript">
+  
+  let divtime = document.getElementById('timeleft');
+  
+  
+    setInterval(remainingtime, -1000);
+    
+    function remainingtime() {
+    
+      let today = new Date();
+      let chours = today.getHours();
+      let cminutes = today.getMinutes();
+      let cseconds = today.getSeconds();
+    
+      let thours = 23;
+      let tminutes = 59;
+      let tseconds = 59;
+    
+      let rhours = thours - chours;
+      let rminutes = tminutes - cminutes;
+      let rseconds = tseconds - cseconds;
+    
+    
+  let h = '<div>'+rhours+'</div>' + ':' +  '<div>'+rminutes+'</div>'  + ':' +  '<div>'+rseconds+'</div>' ;
+      
+      divtime.innerHTML=h;
+    }
+  </script>
+ </div>
+ </div>
+ <hr>
+ <div id="urgenttasks">
+   <button id="ut" onclick="urgenttasks()">Urgent Tasks</button>
+ </div>
+ <hr>
+ <div id="reqpom">
+ <input type="number" placeholder="how many pomorodos you need for the task" id="snop">
+ <button id="snopset">Set</button>
+ </div>
+<hr>
+
+<p id="counter">No of Pomodoros:-</p>
+
+<hr>
+<section id="timers">
+ 
+  
+  
+</section>
+<hr>
+<section id="fbtimers">
+  <br>
+ <center> <p class="timersp">Focus Timer</p></center>
+  <div id="focustimer">
+    
+  </div>
+  <center><p class="timersp">Break Timer</p></center>
+  <div id="breaktimer">
+    
+  </div>
+</section>
+
+
+
+<script src="startingpage.js"></script>
+
+</body>
+
+</html>

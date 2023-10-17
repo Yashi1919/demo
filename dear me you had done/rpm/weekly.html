@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  header{
+    margin-top: 0px;
+    background-color: ;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
+  body{
+    margin-top: 0px;
+    background-color:#CBC3E3;
+  }
+    nav{
+      display: flex;
+      justify-content: space-between;
+           margin-top: 0px;
+
+    }
+    .nav{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-bottom:5px;
+      background-color: #FFA500;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #426A8C;
+      font-weight: bold;
+    }
+    #headerpara{
+      background-color: ;
+      margin-top: 0px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      font-style: italic;
+      font-weight: bold;
+      color: red;
+      font-size: 18px;
+
+    }
+    #headerdiv{
+      margin: 0px;
+      background-color:#90EE90;
+      border-end-start-radius:10px;
+      border-end-end-radius: 10px;
+    }
+    
+    
+#mainsection{
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #90EE90;
+  border-radius: 25px;
+}    
+ #addgoals{
+display: flex;
+padding: 10px:
+}
+#goal{
+  width: 270px;
+    border:2px solid #90EE90;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #4268AC;
+    color: #90EE90;
+}
+#addgoal{
+  margin-left: 10px;
+  width: 75px;
+  border:2px solid #90EE90;
+  height: 45px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: orange;
+  color: #426A8C;
+  font-size: 25px;
+  font-style: italic;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.nav1{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-bottom:5px;
+      background-color: hotpink;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #426A8C;
+      font-weight: bold;
+    }
+    
+.weeks{
+      background-color: #FFA500;
+      height: 70px;
+      margin-top: 5px;
+      border-radius: 15px;
+      overflow-y: scroll;
+    }
+    .heading{
+      background-color: #426A8C;
+            border-radius: 15px;
+color: #90EE90;
+margin-bottom: 1px;
+    }
+    .di{
+      width: 280px;
+      margin-top: 0px;
+      background-color: #426A8C;
+      border-radius: 10px;
+      color: #90EE90;
+      font-weight: bold;
+    }
+    .set{
+      margin-left: 10px;
+      width: 40px;
+      background-color: #90EE90;
+      border: 1px solid #426A8C;
+      border-radius: 8px;
+      font-weight: bold;
+      
+    }
+
+
+
+       
+    
+  </style>
+</head>
+
+<body id="weekly">
+  <div id="headerdiv">
+<header>
+ <center><p id="headerpara">select your goal type</p></center>
+  <nav id="goalselector">
+<button class="nav" id="yearly">yearly</button>
+<button class="nav" id="monthly">monthly</button>
+<button class="nav1" id="weekly">weekly</button>
+<button class="nav" id="daily">daily</button>
+
+  </nav>
+</header>
+
+</div>
+<hr>
+<div id="addgoals">
+  <input type="text" id="goal"><button id="addgoal">add</button>
+</div>
+<hr>
+<section id="mainsection">
+  <div id="maindiv">
+    
+  </div>
+</section>
+
+
+<script>
+  let maindiv=document.getElementById('maindiv');
+ 
+   
+
+ function repdiv(){
+   for(let i=1; i<=56; i++){
+     let div=document.createElement('div');
+     div.classList.add('weeks');
+     
+  /*   div.innerHTML=`<center><h4 class="heading">day ${i}</h4></center>
+     <input type="text" id="day${i}" class="di"><button id="setday${i}" class="set">set</button><br>
+     <div id="tasks"></div>
+     `;
+     */
+  
+     
+     //let inp=div.querySelector('.day'+i);
+//let btn=div.querySelector('.set'+i);
+
+let h4=document.createElement('h4');
+h4.classList.add("heading");
+h4.innerHTML="week"+i;
+h4.style.textAlign="center";
+div.appendChild(h4);
+
+let input=document.createElement('input');
+input.setAttribute("type","text");
+input.setAttribute('id',"week"+i);
+input.classList.add("di");
+div.appendChild(input);
+
+let btn=document.createElement("button");
+btn.classList.add("set");
+btn.setAttribute("id","setweeks"+i);
+btn.innerHTML="set";
+div.appendChild(btn);
+
+
+let tasks=document.createElement('div');
+tasks.classList.add('tasks'+i);
+
+
+function somefun(index){
+btn.addEventListener('click',function(){
+    
+ 
+if(localStorage.getItem("weeklytasks"+index)==null){
+  localStorage.setItem("weeklytasks"+index,"[]");
+}
+let tt=JSON.parse(localStorage.getItem("weeklytasks"+index));
+
+let mtt=new Mytask(input.value);
+tt.push(mtt);
+
+localStorage.setItem("weeklytasks"+index,JSON.stringify(tt));
+
+
+ repre(index);
+ 
+
+})
+
+}
+
+
+
+
+
+function repre(index){
+let ul=document.createElement('ul');
+ul.classList.add('tasksul');
+
+  let tth=JSON.parse(localStorage.getItem("weeklytasks"+index));
+for(let i=1; i<tth.length; i++){
+  let li=document.createElement('li');
+ li.innerHTML=tth[i].task;
+ ul.appendChild(li);
+ div.appendChild(ul);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+   somefun(i);
+
+
+    maindiv.appendChild(div);  
+
+   }
+
+
+
+ }
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ /*
+ let date=new Date();
+ 
+ 
+ console.log(date.getDate());
+ console.log(date.getMonth());
+ 
+ */
+ 
+
+function Mytask(task){
+  this.task=task;
+}
+
+repdiv();
+
+window.onload=function(){
+  repdiv();
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
+

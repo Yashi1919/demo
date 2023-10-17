@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+ <style>
+  body{
+   background-color: #90EE90;
+  }
+  header{
+   background-color: red;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-top: 0px;
+   border-radius: 15px;
+  }
+  header h2{
+   color: #90EE90;
+  }
+  #timers{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 0px;
+  
+  }
+  .thetimers{
+   width:20px;
+   height: 20px;
+   background-color: #426A8C;
+      color: white;
+border-radius: 1px;
+display: flex;
+margin: 40;
+
+   
+  }
+  #paras{
+   display: flex;
+   justify-content: space-evenly;
+   
+  }
+  .paras{
+   margin-right: 5px;
+   margin-left: 15px;
+  }
+  #thetodolist{
+   background-color: red;
+   height: 3000px;
+   width: 100%;
+   border-radius: 15px;
+   
+  }
+  
+  #todoinput{
+   margin-top: 10px;
+   padding: 5px;
+   background-color: #90EE90;
+   font-size: 20px;
+   font-weight: bold;
+   color: red;
+   box-shadow: 4px black;
+   font-style: italic;
+   border-radius: 15px;
+  }
+  #add{
+   font-size: 20px;
+   font-weight: bold;
+   background-color: blue;
+   padding: 7px;
+   border: 2px deeppink;
+   border-radius: 15px;
+   padding-right: 15px;
+   text-align: center;
+   color: red;
+   font-style: italic;
+  }
+  #todos{
+   display:flex;
+   background-size: #426A8C;
+  }
+.nop{
+ width: 100px;
+ font-weight: bold;
+ color: greenyellow;
+ background-color: #426A8C;
+   margin-left: 5px;
+
+}
+.nop placeholder{
+ color: white;
+}
+.lists{
+ background-color: ;
+ display: flex;
+ padding: 5px;
+ padding-bottom: 5px;
+ color: red;
+ font-weight: bold;
+ font-style: italic;
+ 
+}
+.orderedlists{
+ background-color: #90EE90;
+ width: 100%;
+ justify-content:space-evenly;
+ border-radius: 15px;
+}
+.checkbox{
+    margin-left: 5px;
+
+}
+
+.startbtn{
+  font-weight: bold;
+  font-style:italic;
+  margin-left: 5px;
+   border-radius: 5px;
+
+}
+.dltbtn{
+ font-weight: bold;
+ font-style:italic;
+ background-color: red;
+ border: 1px solid red;
+ border-radius: 5px;
+ margin-left: 15px;
+}
+ </style>
+</head>
+
+<body>
+ <header id="pomodoroheader">
+  <center><h2>The To-Do-List</h2></center>
+ </header>
+ <section id="paras">
+  <p class="paras">total-tasks</p>
+  <p class="paras">total-pomodoros</p>
+  <p class="paras">total-time(Min)</p>
+  <p class="paras">tasks-completed</p>
+
+ </section>
+ <section id="timers">
+
+  <div class="thetimers">
+   
+  </div>
+  <div class="thetimers">
+
+  </div>
+
+  <div class="thetimers">
+  
+  </div>
+
+  <div class="thetimers">
+  
+  </div>
+  
+  
+ </section>
+ <hr>
+ 
+ 
+ <section id="thetodolist">
+  <input type="text" id="todoinput" placeholder="Add tasks to do">
+  <button id="add" >ADD</button>
+  <div id="todos">
+  <ol type="" id="lists">
+    
+   </ol>
+   
+  </div>
+  
+  
+ </section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script src="pomodoro.js"></script>
+<script src="todo.js"></script>
+
+</body>
+
+</html>

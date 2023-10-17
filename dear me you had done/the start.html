@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age Calculator</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+<style>
+ body{
+  background-color: #90EE90;
+  margin-top: 0px;
+ }
+ .output{
+  display: flex;
+  justify-content: space-between;
+ }
+ .container{
+   margin-top: ;
+
+ }
+ .input{
+  padding-top: px;
+  padding-bottom: 5px;
+  width: 80%;
+  border: 3px solid #FFA500;
+      background-color: #FFA500;
+
+  margin-top: 2px;
+  color: #90EE90;
+  border-radius: 10px;
+ }
+ 
+ input{
+  background-color: #90EE90;
+  color: #FFA500;
+  border: 2px solid #90EE90;
+  border-radius: 3px;
+ }
+ 
+ #btn{
+background-color: #90EE90;
+border: 2px solid #90EE90;
+font-weight: bold;
+border-radius: 5px;
+ }
+ 
+.output{
+ font-weight: bold;
+ margin-top: 3px;
+}
+.nout{
+ background-color: #FFA500;
+ color: #90EE90;
+ border: 2px solid #FFA500;
+ border-radius: 10px;
+ text-align: center;
+}
+    #qhead{
+  text-align: center;
+}
+#quote{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:bold;
+  background-color: #FFA500;
+  color: #90EE90;
+}
+marquee{
+   background-color: #FFA500;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+a{
+ text-decoration: none;
+}
+a:link{
+ color: #FFA500;
+}
+a:visited{
+ color: orangered;
+}
+a:hover{
+ color: white;
+}
+#books{
+ background-color: black;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ display:flex;
+ flex-flow: column;
+ justify-content: space-between;
+}
+li{
+ color:#90EE90;
+}
+#startbutton{
+ border:2px solid black;
+ background-color: black;
+ font-weight: bold;
+ font-size: 30px;
+ border-radius: 10px;
+ color: #90EE90;
+ box-shadow: 5px 5px #FFA500;
+}
+#footer{
+ margin-top: 10%; 
+ display: flex;
+ justify-content: space-evenly;
+ background-color: #FFA500;
+ margin-bottom: 0px;
+ border-radius: 10px;
+}
+.footer{
+ margin-top: 10%;
+ 
+}
+</style>
+<header>
+<body>
+    <div class="container">
+
+      <center>  <div class="input">
+            
+     <b><p>Select D-O-B</p></b>
+   <input type="date" id="date-input" >
+               <button onclick="ageCalculate()" id="btn">select here</button>
+
+        </div>
+        <div class="output">
+                     <p>your age:-</p>
+
+            <div class="nout">
+                <span id="years">
+                    -
+                </span>
+                <p>
+                    Years
+                </p>
+            </div>
+            <div class="nout">
+                <span id="months">
+                    -
+                </span>
+                <p>
+                   Months
+                </p>
+            </div>
+            <div class="nout">
+                <span id="days">
+                    -
+                </span>
+                <p>
+                    Days
+                </p>
+            </div>
+            
+                  <div class="nout">
+                    <span id="hours">
+                           -
+                          </span>
+                          <p>
+                           hours
+                          </p>
+                         </div>
+                         <div class="nout">
+                          <span id="minutes">
+                           -
+                          </span>
+                          <p>
+                           minutes
+                          </p>
+                         </div>
+                         <div class="nout">
+                          <span id="seconds">
+                           -
+                          </span>
+                          <p>
+                           seconds
+                          </p>
+                         </div>
+        </div>
+    </div>
+    </header>
+    <hr color="orange">
+    
+    
+    <u><h2 id="qhead">Today's Quote</h2></u>
+    <hr color="#FFA500">
+    <marquee behavior="" direction="">
+   <i><p id="quote">Quote</p></i>
+    </marquee>
+    <hr color="#FFA500">
+        <hr color="#FFA500">
+
+<u><center><h2>4.books for the week</h2></center></u>   
+<div id="books">
+<ol type="1">
+ <li>atomic habits:-<a href="atomic-habits.pdf" download="">download</a></li>
+ <li>how to talk to anyone:-<a href="/How-to-Talk-to-Anyone-Book-PDF-by-Leil-Lowndes.pdf" download="">download</a></li>
+ <li>rich dad poor dad:-<a href="/Rich Dad Poor Dad ( PDFDrive ).pdf" download="">download</a></li>
+ <li>i am malala(auto-biography):-<a href="/I am Malala_ The Story of the Girl Who Stood Up for Education ( PDFDrive ).pdf" download="">download</a></li>
+
+</ol>
+  </div>  
+ <hr color="orange">
+ 
+ <center><button id="startbutton">Start Your Day</button></center>
+
+ <footer id="footer">
+ <a href="" ><img src="fb.png" class="footer"></a>
+ <a href="" ><img src="insta.png" class="footer"></a>
+ <a href="" ><img src="twt.png" class="footer"></a>
+
+ </footer>   
+    
+    
+    <script src="the start.js"></script>
+    <script src="quotegen.js"></script>
+    
+    
+</body>
+</html>
